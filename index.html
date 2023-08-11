@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- container start -->
+    <div class="container">
+        <h1>Survey Form:</h1>
+        <hr>
+        <!-- form start -->
+        <form action="">
+            <!-- name -->
+           <form-group>
+            <h3 class="heading">Customar Name</h3>
+            <form-wrap style="display: flex;flex-wrap: wrap; gap: 2rem;">
+                <div class="input-div">
+                    <input type="text" class="input-control" id="fname" name="fname" placeholder="Frist Name"><br>
+                    <label for="fname">Enter Your First Name</label> <br>
+                </div>
+                <div class="input-div">
+                    <input type="text" class="input-control" id="lname" name="lname" placeholder="Last Name"> <br>
+                    <label for="lname" class="lavel-control">Enter Your Last Name</label> <br>
+                </div>
+            </form-wrap>
+           </form-group> 
+           <!-- name end -->
+
+           <!-- Address start -->
+           <form-group>
+            <h3 class="heading">Address</h3>
+            <div class="input-div">
+                <input type="text" class="input-control" id="street-address-1" name="street-address-1" placeholder="Enter Your permanent Address"> <br>
+                <label for="street-address-1">Street Address</label> <br>
+            </div>
+            <div class="input-div">
+                <input type="text" class="input-control" id="street-address-2" name="street-address-2" placeholder="Enter your Present Address"> <br>
+                <label for="street-address-2" class="lavel-control">Street Address line 2</label> <br>
+            </div>
+            <!-- city & state -->
+            <form-wrap style="display: flex; flex-wrap: wrap; gap: 2rem;">
+                <div class="input-div">
+                    <input type="text" class="input-control" id="city" name="city" placeholder="Enter Your City Name:-"> <br>
+                    <label for="city">City</label> <br>
+                </div>
+                <div class="input-div">
+                    <input type="text" class="input-control" id="state" name="state" placeholder="Enter your State:-"> <br>
+                    <label for="state" class="lavel-control">State</label> <br>
+                </div>
+            </form-wrap>
+            <form-wrap style="display: flex; flex-wrap: wrap; gap: 2rem;">
+                <div class="input-div">
+                    <input type="number" class="input-control" id="zip" name="zip" placeholder="Enter Your Zip code:-"> <br>
+                    <label for="city">Zip</label> <br>
+                </div>
+                <div class="input-div">
+                    <select name="country" id="country" class="input-control">
+                        <option value="Bangladesh">India</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Pakistan">Japan</option>
+                        <option value="Turkey">Turkey</option>
+                        <option value="Oman">USA</option>
+                        <option value="Qater">Russia</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Iran">Iran</option>
+                        <option value="Egypt">Egypt</option>
+                    </select><br>
+                    <label for="state" class="lavel-control">Country</label> <br>
+                </div>
+            </form-wrap>
+           </form-group>
+            <!--address end  -->
+
+            <!-- contact start -->
+            <form-group>
+                <h3 class="heading">Contact</h3>
+                <form-wrap style="display: flex; flex-wrap: wrap; gap: 2rem;">
+                    <div class="input-div">
+                        <input type="tel" class="input-control" id="phone" name="phone" placeholder="+91-**********"><br>
+                        <label for="phone">Phone</label> <br>
+                    </div>
+                    <div class="input-div">
+                        <input type="email" class="input-control" id="email" name="Email" placeholder="*****@gmail.com"> <br>
+                        <label for="email" class="lavel-control">Email</label> <br>
+                    </div>
+                </form-wrap>
+               </form-group> 
+            <!-- contact start end -->
+
+            <!-- Parsonal Details start -->
+            <form-group>
+                <br>
+                <h3 class="heading" >Personal Details</h3>
+                <br>
+                <hr>
+                <br>
+                <form-wrap style="display: flex; flex-wrap: wrap; gap: 3rem;">
+                    <div class="input-div" >
+                        <h4 class="sub-heading">Gender</h4>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
+                        <input type="radio" id="fmale" name="gender">
+                        <label for="fmale">Female</label> 
+                        <input type="radio" id="other" name="gender">
+                        <label for="other">Other</label> 
+                    </div>
+                    <div class="input-div">
+                        <h4 class="sub-heading">Religion</h4>
+                        <input type="radio" id="hindu" name="religion">
+                        <label for="hindu">Hindu</label>
+                        <input type="radio" id="christianity" name="religion">
+                        <label for="christianity">Christianity</label> 
+                        <input type="radio" id="rother" name="religion">
+                        <label for="rother">Other</label> 
+                    </div>
+                </form-wrap>
+               </form-group> 
+               <!-- Parsonal Details end -->
+
+               <form-group>
+                <br>
+                <h3 class="heading">Ratings</h3>
+                <br>
+                <form-wrap style="margin: 0.5rem 0px ; display: flex; gap: 2rem;">
+                    <h4 class="sub-heading" style="margin-top: 4px;">Rating 1:</h4>
+                    <div class="input-div" style="display: flex; gap:10px;">
+                        <!-- <span>Rating-1:-</span> -->
+                        <input type="radio" id="bad" name="Rating-1">
+                        <label for="bad">Bad</label>
+                        <input type="radio" id="good" name="Rating-1">
+                        <label for="good">Good</label> 
+                        <input type="radio" id="excelent" name="Rating-1">
+                        <label for="excelent">Excelent</label> 
+                    </div>
+                </form-wrap>
+                <form-wrap style="margin: 0.5rem 0px ; display: flex; gap: 2rem;">
+                    <h4 class="sub-heading" style="margin-top: 4px;">Rating 2:</h4>
+                    <div class="input-div" style="display: flex; gap:10px;">
+                        <!-- <span>Rating-1:-</span> -->
+                        <input type="radio" id="bad" name="Rating-2">
+                        <label for="bad">Bad</label>
+                        <input type="radio" id="good" name="Rating-2">
+                        <label for="good">Good</label> 
+                        <input type="radio" id="excelent" name="Rating-2">
+                        <label for="excelent">Excelent</label> 
+                    </div>
+                </form-wrap>
+                <form-wrap style="margin: 0.5rem 0px ; display: flex; gap: 2rem;">
+                    <h4 class="sub-heading" style="margin-top: 4px;">Rating 3:</h4>
+                    <div class="input-div" style="display: flex; gap:10px;">
+                        <!-- <span>Rating-1:-</span> -->
+                        <input type="radio" id="bad" name="Rating-3">
+                        <label for="bad">Bad</label>
+                        <input type="radio" id="good" name="Rating-3">
+                        <label for="good">Good</label> 
+                        <input type="radio" id="excelent" name="Rating-3">
+                        <label for="excelent">Excelent</label> 
+                    </div>
+                </form-wrap>
+                <form-wrap style="margin: 0.5rem 0px ; display: flex; gap: 2rem;">
+                    <h4 class="sub-heading" style="margin-top: 4px;">Rating 4:</h4>
+                    <div class="input-div" style="display: flex; gap:10px;">
+                        <!-- <span>Rating-1:-</span> -->
+                        <input type="radio" id="bad" name="Rating-4">
+                        <label for="bad">Bad</label>
+                        <input type="radio" id="good" name="Rating-4">
+                        <label for="good">Good</label> 
+                        <input type="radio" id="excelent" name="Rating-4">
+                        <label for="excelent">Excelent</label> 
+                    </div>
+                </form-wrap>
+                <form-wrap style="margin: 0.5rem 0px ; display: flex; gap: 2rem;">
+                    <h4 class="sub-heading" style="margin-top: 4px;">Rating 5:</h4>
+                    <div class="input-div" style="display: flex; gap:10px;">
+                        <!-- <span>Rating-1:-</span> -->
+                        <input type="radio" id="bad" name="Rating-5">
+                        <label for="bad">Bad</label>
+                        <input type="radio" id="good" name="Rating-5">
+                        <label for="good">Good</label> 
+                        <input type="radio" id="excelent" name="Rating-5">
+                        <label for="excelent">Excelent</label> 
+                    </div>
+                </form-wrap>
+                <button>Submit</button>
+               </form-group>
+               <br>
+               <br>
+               <span>&copy; All Right Reseverd By Saptorshi Bairagya </span>
+
+        </form>
+        <!-- form end -->
+    </div>
+    <!-- container end -->
+</body>
+</html>

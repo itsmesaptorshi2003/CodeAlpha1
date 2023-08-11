@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e6f164;
+    color: black;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.container{
+    max-width: 50rem;
+    border: 2px solid;
+    margin: 2rem 0;
+    padding: 0 3rem;
+    margin: auto;
+}
+
+.container h1{
+    font-size: 4rem;
+    text-align: center;
+}
+/* form section */
+.container form{
+    margin: 2rem 0;
+}
+.container form form-group h3{
+    font-size: 1.8rem;
+}
+.container form form-group label{
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.container form form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container form form-group .input-div{
+    margin: .3rem 0;
+}
+
+.input-div .input-control{
+    width: 100%;
+    padding: .6rem 1rem;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.2rem;
+    color: #999;
+}
+
+.input-div .input-control:focus{
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    color: #212529;
+
+
+}
+button{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 0px auto;
+    display: block;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid red;
+    background-color: transparent;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 1px #0000;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+button:hover{
+    background-color: #023de3;
+    transition: all ease .5s;
+
+}
+
+span{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
